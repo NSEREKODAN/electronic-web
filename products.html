@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dan Electronics | Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">⚡ Dan<span>Electronics</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">All Products</h1>
+    <div class="product-grid" id="all-products">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=300&fit=crop" alt="Smartphone">
+        <h3>Volt X Pro</h3>
+        <p class="price">UGX 1,850,000</p>
+        <button class="btn add-to-cart" data-id="1" data-name="Volt X Pro" data-price="1850000">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop" alt="Laptop">
+        <h3>UltraBook Air</h3>
+        <p class="price">UGX 3,200,000</p>
+        <button class="btn add-to-cart" data-id="2" data-name="UltraBook Air" data-price="3200000">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Smart TV">
+        <h3>Smart TV 55"</h3>
+        <p class="price">UGX 2,450,000</p>
+        <button class="btn add-to-cart" data-id="3" data-name="Smart TV 55\"" data-price="2450000">Add to Cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&h=300&fit=crop" alt="Smartwatch">
+        <h3>Volt Watch</h3>
+        <p class="price">UGX 650,000</p>
+        <button class="btn add-to-cart" data-id="4" data-name="Volt Watch" data-price="650000">Add to Cart</button>
+      </div>
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop" alt="Tablet">
+        <h3>Volt Tab S</h3>
+        <p class="price">UGX 1,200,000</p>
+        <button class="btn add-to-cart" data-id="5" data-name="Volt Tab S" data-price="1200000">Add to Cart</button>
+      </div>
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&h=300&fit=crop" alt="Headphones">
+        <h3>NoiseCancel Pro</h3>
+        <p class="price">UGX 380,000</p>
+        <button class="btn add-to-cart" data-id="6" data-name="NoiseCancel Pro" data-price="380000">Add to Cart</button>
+      </div>
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1588508065123-287b28e013da?w=400&h=300&fit=crop" alt="Speaker">
+        <h3>Bass Boom Speaker</h3>
+        <p class="price">UGX 750,000</p>
+        <button class="btn add-to-cart" data-id="7" data-name="Bass Boom Speaker" data-price="750000">Add to Cart</button>
+      </div>
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=400&h=300&fit=crop" alt="Camera">
+        <h3>ProShot Camera</h3>
+        <p class="price">UGX 2,800,000</p>
+        <button class="btn add-to-cart" data-id="8" data-name="ProShot Camera" data-price="2800000">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <!-- Brand column -->
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">⚡ Dan<span>Electronics</span></div>
+        <p>Your trusted electronics store in Kampala — genuine devices, fair UGX prices, and fast delivery nationwide.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="products.html">Smartphones</a></li>
+          <li><a href="products.html">Laptops</a></li>
+          <li><a href="products.html">Televisions</a></li>
+          <li><a href="products.html">Smartwatches</a></li>
+          <li><a href="products.html">Accessories</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:+256700000000">+256 700 000 000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@danelectronics.ug">info@danelectronics.ug</a></li>
+          <li><i class="fas fa-clock"></i> Sun - Fri : 8am - 8pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2027 Dan Electronics. All rights reserved. All prices in UGX.</p>
+        <p>
+          <a href="#">Privacy Policy</a>
+          <span class="footer-sep">|</span>
+          <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
