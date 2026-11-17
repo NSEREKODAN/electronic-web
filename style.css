@@ -557,6 +557,7 @@ footer {
   color: var(--accent);
 }
 
+/* --- Social icons --- */
 .footer-social {
   display: flex;
   gap: 0.8rem;
@@ -589,7 +590,7 @@ footer {
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding: 1.5rem 0;
-  background: rgba(0, 0, 0, 0.1); 
+  background: rgba(0, 0, 0, 0.1); /* Slight darkening for contrast */
 }
 
 .footer-bottom-content {
@@ -617,12 +618,15 @@ footer {
   opacity: 0.4;
 }
 
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet and below */
 @media (max-width: 992px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .footer-brand {
-    grid-column: 1 / -1;/* Brand takes full width on tablets */
+    grid-column: 1 / -1;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -633,9 +637,34 @@ footer {
   }
 }
 
+/* Mobile Landscape and below */
 @media (max-width: 768px) {
+  /* --- Contact Page Fix --- */
+  .contact-wrapper {
+    grid-template-columns: 1fr; /* Stacks the form below the info */
+    gap: 1.5rem;
+  }
+
+  .contact-info, .contact-form {
+    padding: 1.5rem; /* Slightly reduce padding for smaller screens */
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+    align-items: flex-start; /* Ensures icons align with the first line of text */
+  }
+
+  .contact-info i {
+    margin-top: 0.25rem; /* Adjusts icon alignment */
+  }
+
+  .map-placeholder iframe {
+    height: 250px; /* Ensure the map is visible on mobile */
+  }
+
+  /* --- Footer Responsive Fix --- */
   .footer-grid {
-    grid-template-columns: 1fr 1fr; /* 2 columns on mobile */
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
   .footer-col h4::after {
@@ -662,9 +691,33 @@ footer {
   }
 }
 
+/* Small Phones */
 @media (max-width: 480px) {
+  /* --- Header Responsive Fix --- */
+  .header-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  nav ul {
+    flex-wrap: wrap; /* Allows menu items to wrap on very small screens */
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* --- Contact Page Fix --- */
+  .page-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .contact-info h3, .contact-form h3 {
+    font-size: 1.2rem;
+  }
+
+  /* --- Footer Responsive Fix --- */
   .footer-grid {
-    grid-template-columns: 1fr; /* Single column on small phones */
+    grid-template-columns: 1fr;
     gap: 2.5rem;
     text-align: center;
   }
@@ -672,8 +725,7 @@ footer {
     justify-content: center;
   }
   .footer-col ul li a:hover {
-    padding-left: 0; /* Disable hover shift on mobile */
+    padding-left: 0;
     color: var(--accent);
   }
 }
-
